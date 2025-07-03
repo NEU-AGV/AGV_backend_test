@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: agv
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/agv
+    username: agv
+    password: agv
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  mail:
+    host: mail.mozihe.com
+    port: 587
+    username: mozihe@mozihe.com
+    password: 20050105zhu
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: zhujunheng2005
+
+minio:
+  url: http://localhost:9000
+  accessKey: rkDbYWxcBFuMAIeukasH
+  secretKey: bM2hijZRaMMSG7xsAud4yJiLCJlvuU1lkFbi2P9e
+  bucketName: agv
