@@ -1,4 +1,4 @@
-package com.moxin.agvbackend.pojo.entity;
+package com.moxin.agvbackend.pojo.dto;
 
 import com.moxin.agvbackend.pojo.entity.Defect;
 import org.junit.jupiter.api.Test;
